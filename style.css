@@ -24,5 +24,5 @@ body {
   25%  { background-image: url('2.jpg'); }
   50%  { background-image: url('3.jpg'); }
   75%  { background-image: url('4.jpg'); }
-  100% { background-image: url('1.jpg'); } /* Loop back to first image */
+  100% { background-image: url('1.jpg'); }
 }
