@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+  margin: 0;
+}
+
+.slider-box {
+  margin: 0 auto;
+  height: 28rem; 
+  width: 36rem;
+  background-size: 100% 100%;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.5); /* Adjusted for better visibility */
+  border-radius: 12px; /* Optional: adds a modern touch */
+  
+  /* The animation: name | duration | timing-function | iteration-count */
+  animation: slider 10s linear infinite;
+}
+
+@keyframes slider {
+  0%   { background-image: url('1.jpg'); }
+  25%  { background-image: url('2.jpg'); }
+  50%  { background-image: url('3.jpg'); }
+  75%  { background-image: url('4.jpg'); }
+  100% { background-image: url('1.jpg'); } /* Loop back to first image */
+}
